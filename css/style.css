@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(239, 147, 114);
+}
+
+header h1 {
+    font-family: 'Shadows Into Light', cursive;
+    position: center;
+    top: 0;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    font-weight: 500;
+    background-color: rgb(241, 91, 17);
+}
+
+nav ul {
+    display: flex;
+    justify-content: baseline;
+    list-style: none;
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    font-size: 16px;
+}
+
+li a {
+    font-family: 'Indie Flower', cursive;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: rgb(244, 238, 237);
+    border-radius: 2rem;
+    padding: 0.7rem;
+    color: black;
+}
+
+a:hover {
+    color: rgb(238, 125, 59);
+}
+
+a {
+    transition: color 1.2s linear 0.6s;
+}
+
+.menu {
+    text-decoration: none;
+    list-style: none;
+}
+
+.index {
+    border-radius: 5rem;
+    background-color: rgb(50, 146, 146);
+    margin: 150px;
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(231, 255, 19);
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.index1 {
+    display: grid;
+    grid-template-rows: 2fr 2fr;
+    grid-template-columns: 100%;
+    justify-items: center;
+}
+
+.indext {
+    font-size: 1.8rem;
+    background-color: rgb(237, 229, 229);
+    margin-top: auto;
+    margin-block-end: 20px;
+}
+
+.index2 a {
+    text-decoration: none;
+    font-family: 'Shadows Into Light', cursive;
+    color: rgb(30, 171, 17);
+    font-size: 3rem;
+    justify-items: center;
+    row-gap: 3rem;
+}
+
+.contacto {
+    margin: 80px;
+}
+
+.mainNosotros {
+    height: 70vh;
+    row-gap: 2rem;
+    column-gap: 2rem;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-areas: "mainP mainP"
+        "imagen1 imagen2"
+        "imagen3 imagen4"
+        "parrafo parrafo"
+    ;
+    justify-content: center;
+    justify-items: center;
+}
+
+.serv {
+    display: none;
+}
+
+.mainNosotros ul {
+    font-size: 1rem;
+    font-family: 'Shadows Into Light', cursive;
+    text-decoration: none;
+    list-style: none;
+}
+
+.mainP {
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    color: beige;
+    grid-area: mainP;
+}
+
+.imagen1 {
+    grid-area: imagen1;
+}
+
+.imagen2 {
+    grid-area: imagen2;
+}
+
+.imagen3 {
+    grid-area: imagen3;
+}
+
+.imagen4 {
+    grid-area: imagen4;
+}
+
+.parrafo {
+    text-align: center;
+    font-size: 2rem;
+    color: beige;
+    grid-area: parrafo;
+}
+
+footer p {
+    background-color: rgb(241, 51, 13);
+    font-family: 'Shadows Into Light', cursive;
+    text-align: center;
+    font-size: 0.8rem;
+    color: blanchedalmond;
+}
+
+.ofertas {
+    padding: 2rem;
+    font-family: 'Shadows Into Light', cursive;
+    color: rgb(238, 255, 0);
+    text-align: center;
+}
+
+.ofertas-Mes {
+    display: grid;
+    grid-column: initial;
+    justify-items: center;
+}
+
+.ofertas-Mes ul {
+    font-family: 'Shadows Into Light', cursive;
+    list-style: none;
+}
+
+@media screen and (min-width:600px) {
+    .serv {
+        display: block;
+        grid-area: serv;
+    }
+
+    .mainNosotros {
+        height: 80vh;
+        grid-template-areas: "mainP mainP mainP mainP"
+            "serv serv serv serv"
+            "imagen1 imagen2  imagen3 imagen4"
+            "parrafo parrafo parrafo parrafo"
+        ;
+        column-gap: 2.5rem;
+    }
+
+    header h1 {
+        font-family: 'Shadows Into Light', cursive;
+        position: center;
+        top: 0;
+        text-align: center;
+        color: white;
+        font-size: 5rem;
+        font-weight: 900;
+        background-color: rgb(241, 91, 17);
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        margin-top: 3rem;
+        font-size: 1.8rem;
+        font-size: x-large;
+    }
+
+    li a {
+        font-family: 'Indie Flower', cursive;
+        font-weight: 600;
+        text-decoration: none;
+        background-color: rgb(244, 238, 237);
+        border-radius: 2rem;
+        padding: 0.7rem;
+        color: black;
+    }
+
+    a:hover {
+        color: red;
+    }
+
+    a {
+        transition: color 1.2s linear 0.2s;
+    }
+
+    footer p {
+        margin: 700px;
+        background-color: rgb(241, 51, 13);
+        text-align: center;
+        font-family: 'Shadows Into Light', cursive;
+        font-size: 2rem;
+        color: blanchedalmond;
+    }
+
+    .ofertas {
+        font-size: 3rem;
+    }
+
+    .ofertas-Mes {
+        display: grid;
+        grid-column: initial;
+        justify-items: center;
+    }
+
+    .ofertas-Mes ul {
+        font-family: 'Shadows Into Light', cursive;
+        font-size: 1.5rem;
+        list-style: none;
+    }
+
+
+
+
+    @media screen and (min-width:1024px) {
+        .mainNosotros {
+            grid-template-areas: "mainP mainP serv serv"
+                "imagen1 imagen2  imagen3 imagen4"
+                "parrafo parrafo parrafo parrafo";
+            column-gap: 2.8rem;
+        }
+
+        .mainNosotros ul {
+            font-size: 1.5rem;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .serv ul {
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .parrafo {
+            font-size: 5.2rem;
+        }
+
+        .ofertas {
+            font-size: 4.5rem;
+        }
+
+        .ofertas-Mes {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            ;
+            row-gap: 2rem;
+            justify-items: center;
+        }
+
+        .ofertas-Mes ul {
+            font-size: 2rem;
+            font-family: 'Shadows Into Light', cursive;
+            list-style: none;
+        }
+
+        .index {
+            margin: 150px;
+            text-align: center;
+            font-size: 4rem;
+            color: rgb(231, 253, 31);
+            font-family: 'Shadows Into Light', cursive;
+        }
+
+        .index1 {
+            display: grid;
+            grid-template-rows: 2fr 2fr;
+            grid-template-columns: 100%;
+            justify-items: center;
+        }
+
+        .indext {
+            font-size: 1.8rem;
+        }
+
+        .index2 a {
+            text-decoration: none;
+            font-family: 'Shadows Into Light', cursive;
+            color: rgb(30, 171, 17);
+            font-size: 3rem;
+            justify-items: center;
+        }
+
+        .contacto {
+            margin: 100px;
+            font-family: 'Shadows Into Light', cursive;
+            color: rgb(8, 8, 8);
+            font-size: 3rem;
+            justify-items: center;
+        }
+
+        form {
+            font-family: 'Shadows Into Light', cursive;
+            color: rgb(10, 10, 10);
+            font-size: 2rem;
+            justify-items: center;
+        }
+
+        form legend {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 3rem;
+        }
+    }
+
+    footer p {
+        margin: 700px;
+        background-color: rgb(241, 51, 13);
+        text-align: center;
+        font-family: 'Shadows Into Light', cursive;
+        font-size: 2rem;
+        color: blanchedalmond;
+    }
+
+    footer p :hover {
+        color: rgb(240, 112, 70);
+    }
+
+    p {
+        transition: color 1.5s linear 0.5s;
+    }
+
+    .kiosco1 {
+        font-family: 'Shadows Into Light', cursive;
+        color: rgb(10, 10, 10);
+        font-size: 2rem;
+        justify-items: center;
+    }
+}
